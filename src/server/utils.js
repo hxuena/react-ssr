@@ -11,11 +11,11 @@ export const render = (req) => {
   );
   return `
     <html>
-      <heade>
+      <head>
         <title>react ssr</title>
       </head>
       <body>
-        ${content}
+        <div id="root">${content}</div>
         <script src='/index.js'></script>
       </body>
     </html>
