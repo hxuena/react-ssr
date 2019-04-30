@@ -8,7 +8,7 @@
     "dev": "npm-run-all --parallel dev:**",
     "dev:build:server": "webpack --config webpack.server.js --watch",
     "dev:build:client": "webpack --config webpack.client.js --watch",
-    "dev:start": "supervisor ./build/bundle.js "
+    "dev:start": "supervisor \"./build/bundle.js\" "
   },
   "repository": {
     "type": "git",
@@ -22,17 +22,20 @@
   },
   "homepage": "https://github.com/hxuena/react-ssr#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "express": "^4.16.4",
+    "immutable": "^4.0.0-rc.12",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-redux": "^7.0.3",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "redux": "^4.0.1",
+    "redux": "^4.0.0",
+    "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
