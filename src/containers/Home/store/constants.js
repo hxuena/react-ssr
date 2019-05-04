@@ -1,1 +1,0 @@
-export const HOME_LIST = 'home/home_list';

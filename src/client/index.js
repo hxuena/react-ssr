@@ -1,18 +1,14 @@
 import React from 'react';
-import ReactDom from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import Routes from '../Routes.js'
-import { Provider } from 'react-redux';
-import { getStore } from '../store';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from '../Routes'
 
 const App = () => {
   return (
-    <Provider store={getStore()}>
-      <BrowserRouter>
-        {Routes}
-      </BrowserRouter>
-    </Provider>
+    <BrowserRouter>
+      {Routes}
+    </BrowserRouter>
   )
 }
 
-ReactDom.hydrate(<App />, document.getElementById('root'))
+ReactDOM.hydrate(<App />, document.getElementById('root'))
